@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>2</title>
+	<style>
+		body{
+			margin: 0;
+			padding: 0;
+		}
+		div{
+			text-align: center;
+			color: #fff;
+		}
+		@media screen and (max-width: 800px) {
+			.a{
+				height: 50px;
+				line-height: 50px;
+				background: darkblue;
+			}
+			.b{
+				height: 50px;
+				line-height: 50px;
+				background: green;
+			}
+			.c{
+				height: 150px;
+				line-height: 150px;
+				background: blue;
+			}
+		
+		}
+		@media screen and (min-width: 801px) /*and (max-width: 1200px)*/ {
+			.a{
+				float: left;
+				width: 20%;
+				height: 350px;
+				line-height: 350px;
+				background: purple;
+			}
+			.bcd{
+				float: right;
+				width: 80%;
+			}
+			.b{
+				height: 100px;
+				line-height: 100px;
+				background: blue;
+			}
+			.c{
+				height: 250px;
+				line-height: 250px;
+				background: green;
+			}
+		
+		}
+		@media screen and (min-width: 1201px){
+			/*.a{
+				float: left;
+				height: 350px;
+				width: 20%;
+				line-height: 350px;
+				background: darkblue;
+			}
+			.bcd{
+				float: right;
+				width: 80%;
+			}
+			.b{
+				height: 100px;
+				line-height: 100px;
+				background: green;
+			}*/
+			.c{
+				float: left;
+				width: 70%;
+				/*height: 250px;
+				line-height: 250px;
+				background: blue;*/
+			}
+			.d{
+				display: block;
+				float: right;
+				width: 30%;
+				height: 250px;
+				line-height: 250px;
+				background: lightblue;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="abcd">
+		<div class="a">a</div>
+		<div class="bcd">
+			<div class="b">b</div>
+			<div class="cd">
+				<div class="c">c</div>
+				<div class="d">d</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
